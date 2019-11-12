@@ -1,0 +1,12 @@
+C:\Users\muratpc\Desktop\denemeProjeler\RestHesap\RestHesap\RestHesap\bin\Debug\netstandard2.0\RestHesap.deps.json
+C:\Users\muratpc\Desktop\denemeProjeler\RestHesap\RestHesap\RestHesap\bin\Debug\netstandard2.0\RestHesap.dll
+C:\Users\muratpc\Desktop\denemeProjeler\RestHesap\RestHesap\RestHesap\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\muratpc\Desktop\denemeProjeler\RestHesap\RestHesap\RestHesap\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\muratpc\Desktop\denemeProjeler\RestHesap\RestHesap\RestHesap\obj\Debug\netstandard2.0\RestHesap.AssemblyInfoInputs.cache
+C:\Users\muratpc\Desktop\denemeProjeler\RestHesap\RestHesap\RestHesap\obj\Debug\netstandard2.0\RestHesap.AssemblyInfo.cs
+C:\Users\muratpc\Desktop\denemeProjeler\RestHesap\RestHesap\RestHesap\bin\Debug\netstandard2.0\ref\RestHesap.dll
+C:\Users\muratpc\Desktop\denemeProjeler\RestHesap\RestHesap\RestHesap\bin\Debug\netstandard2.0\RestHesap.pdb
+C:\Users\muratpc\Desktop\denemeProjeler\RestHesap\RestHesap\RestHesap\obj\Debug\netstandard2.0\RestHesap.dll
+C:\Users\muratpc\Desktop\denemeProjeler\RestHesap\RestHesap\RestHesap\obj\Debug\netstandard2.0\ref\RestHesap.dll
+C:\Users\muratpc\Desktop\denemeProjeler\RestHesap\RestHesap\RestHesap\obj\Debug\netstandard2.0\RestHesap.pdb
+C:\Users\muratpc\Desktop\denemeProjeler\RestHesap\RestHesap\RestHesap\obj\Debug\netstandard2.0\XamlC.stamp

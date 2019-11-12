@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
+             xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             mc:Ignorable="d"
+             x:Class="RestHesap.MainPage">
+
+    <AbsoluteLayout>
+
+        <Image x:Name="BgImage" Source="foto2.png"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+               AbsoluteLayout.LayoutFlags="All"/>
+
+
+        <Grid>
+
+            <ScrollView HorizontalOptions="Center">
+                <ScrollView.VerticalOptions>
+                    <OnIdiom
+                        x:TypeArguments="LayoutOptions"
+                        Default="CenterAndExpand"
+                        Phone="FillAndExpand" />
+                </ScrollView.VerticalOptions>
+
+                <StackLayout
+                    Margin="{core:OnPlatformOrientationThickness PhonePortrait='50,32',
+                                                                 PhoneLandscape='150,32',
+                                                                 TabletPortrait='200,50',
+                                                                 TabletLandscape='300,50',
+                                                                 Desktop='30'}"
+                    Spacing="0"
+                    VerticalOptions="FillAndExpand"
+                    WidthRequest="{OnPlatform Default='-1',
+                                              UWP='350'}">
+
+
+                    <StackLayout    HorizontalOptions="Center"  Spacing="2" VerticalOptions="Start">
+
+                        <!--  Label to display the title of this page  -->
+                        <Image Source="ayargri" HorizontalOptions="End" WidthRequest="30" HeightRequest="30" VerticalOptions="Start">
+         
+                        </Image>
+                        <StackLayout Margin="40,40,40,40" >
+                            <Image Source="doralogobeyaz" HorizontalOptions="Fill" Aspect="AspectFit" VerticalOptions="Fill"  >
+                            </Image>
+
+                        </StackLayout>
+                        <StackLayout Margin="0,0,0,0">
+                            <inputLayout:SfTextInputLayout Hint="Kullanıcı Adı" LeadingViewPosition="Inside" FocusedColor="White" ContainerType="Outlined" OutlineCornerRadius="9" UnfocusedStrokeWidth="1" ContainerBackgroundColor="White">
+                                <Entry  Text="" x:Name="EntryName"/>
+                                <inputLayout:SfTextInputLayout.LeadingView>
+                                    <Image
+                                Source="user">
+                                    </Image>
+                                </inputLayout:SfTextInputLayout.LeadingView>
+                            </inputLayout:SfTextInputLayout>
+
+                            <inputLayout:SfTextInputLayout  LeadingViewPosition="Inside" Hint="Şifre"  FocusedColor="White" ContainerType="Outlined"  UnfocusedStrokeWidth="1" OutlineCornerRadius="9" ContainerBackgroundColor="#E6EEF9" EnablePasswordVisibilityToggle="True">
+                                <Entry Text="" x:Name="EntrySifre" IsPassword="True"/>
+                                <inputLayout:SfTextInputLayout.LeadingView>
+                                    <Image
+                                Source="lock1">
+                                    </Image>
+                                </inputLayout:SfTextInputLayout.LeadingView>
+                            </inputLayout:SfTextInputLayout>
+                            <StackLayout  Spacing="10" Margin="0,20,0,0">
+                                <Grid >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <buttons:SfCheckBox Grid.Column="0" x:Name="CheckSifre" IsChecked="True" TextColor="White"  CheckedColor="White"  Text="Şifre Kaydet"/>
+                                    <Label  HorizontalOptions="End" Grid.Column="1" VerticalTextAlignment="Center"  TextColor="White" HorizontalTextAlignment="End" 
+                            Text="Şifremi Unuttum?" />
+                                </Grid>
+
+
+                            </StackLayout>
+                            <buttons:SfButton FontAttributes="Bold" Margin="20,20,20,0" FontSize="19" x:Name="BtnGiris" HeightRequest="50" TextColor="#048bca" Text="GİRİŞ" CornerRadius="30" BackgroundColor="White" HorizontalOptions="Center">
+                            </buttons:SfButton>
+
+
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+
+    </AbsoluteLayout>
+</ContentPage>
